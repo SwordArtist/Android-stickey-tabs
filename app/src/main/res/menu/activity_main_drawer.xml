@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_menu_item_1"
-            android:title="Menu Item1" />
+            android:title="Sticky Tabs" />
         <item
             android:id="@+id/nav_menu_item_2"
             android:title="Menu Item2" />
