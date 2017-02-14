@@ -1,5 +1,6 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,9 +11,45 @@
         android:background="@android:color/white">
 
         <android.support.v7.widget.Toolbar
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="0dp"
             android:layout_width="match_parent"
-            app:layout_scrollFlags="scroll|enterAlways"></android.support.v7.widget.Toolbar>
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="185dp"
+                    android:layout_height="164dp"
+                    app:srcCompat="@drawable/kendo1"
+                    android:id="@+id/stickyTabsHeaderImageView"
+                    android:layout_gravity="left" />
+                
+                <TextView
+                    android:text="@string/stickyTabsHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stickyTabsHeaderTextView"
+                    android:paddingLeft="2dp"
+                    android:layout_margin="5dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
 
         <View
             android:layout_width="match_parent"

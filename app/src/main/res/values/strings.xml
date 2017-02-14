@@ -5,4 +5,6 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="stickyTabsHeader">This is a header of the sticky tabs you can scroll up and the below tabs will be stick on the top of this fragment.
+    To change the snapping behavior go to fragment_sticky_tabs.xml and remove or add "snap" option on "app:layout_scrollFlags".</string>
 </resources>
