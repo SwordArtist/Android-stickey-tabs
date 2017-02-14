@@ -4,17 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--https://developer.android.com/reference/android/support/design/widget/AppBarLayout.html-->
+    <!--AppBarLayout is a vertical LinearLayout which implements many of the features of material designs app bar concept, namely scrolling gestures.-->
+    <!--Children should provide their desired scrolling behavior through setScrollFlags(int) and the associated layout xml attribute: app:layout_scrollFlags.-->
+    <!--This view depends heavily on being used as a direct child within a CoordinatorLayout. If you use AppBarLayout within a different ViewGroup, most of it's functionality will not work.-->
+    <!--AppBarLayout also requires a separate scrolling sibling in order to know when to scroll. The binding is done through the AppBarLayout.ScrollingViewBehavior behavior class, meaning that you should set your scrolling view's behavior to be an instance of AppBarLayout.ScrollingViewBehavior. A string resource containing the full class name is available.-->
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:background="@android:color/white">
-
-        <android.support.v7.widget.Toolbar
-            android:layout_height="0dp"
-            android:layout_width="match_parent"
-            app:layout_scrollFlags="scroll|enterAlways|snap">
-        </android.support.v7.widget.Toolbar>
+        
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -45,11 +45,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
-
-
-
-
 
         <View
             android:layout_width="match_parent"
